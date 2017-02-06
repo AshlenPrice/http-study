@@ -135,7 +135,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, give a breif description of what HTTP is.
 
 ```md
-<!-- your answer here -->
+HTTP is the system protocol that sets how information and documents are transfered from one place to another. Usually between clients (the browser) and servers.
+
 ```
 
 ## Describe what a client is and what a server is
@@ -143,7 +144,8 @@ In your own words, give a breif description of what HTTP is.
  What is a client is and what is a server? How do they interact with each other?
 
 ```md
-<!-- your answer here -->
+A client is a program like a browser that sends a request for information to a server. A server is a separate computer that processes and returns the requests sent from the client.
+
 ```
 
 ## Describe the 4 most common HTTP verbs
@@ -152,7 +154,11 @@ What are the 4 most common HTTP verbs used when creating a RESTful API. How
 would you use each?
 
 ```md
-<!-- your answer here -->
+GET - Retrieves information fromthe server
+POST - Creates a information/resource on the server
+PUT/PATCH- Update the informtaion on the server
+DELETE- Delete the information from the server
+
 ```
 
 ## Describe what a Response is
@@ -161,7 +167,10 @@ What is a response? what does it contain? What are some common status codes in a
 response and what do they mean?
 
 ```md
-<!-- your answer here -->
+The response is what is sent back by the server after a request was made by the client.  It contains code that determines if the request was sucessful or not. Some common Status codes include:
+200 ok
+404 Not Found
+500 Internal Server Error
 ```
 
 ## Make a curl request
@@ -169,7 +178,7 @@ response and what do they mean?
 Using curl, how would you get the content from Reddit.com?
 
 ```md
-<!-- your answer here -->
+curl --request GET http://www.reddit.com
 ```
 
 ## Describe the parts of a URL
@@ -179,5 +188,11 @@ refer to this list often in the next few weeks, so it's important to keep it in
 an easy-to-reference place.
 
 ```md
-<!-- your answer here -->
+Protocol: How you talk to the server.
+Host: Your domain name, which web server is being requested.
+Port: the gate that is used to access the server
+Resource path: The location /path to where the resource is on the server.
+Parameters/query: used by the server.
+Anchor: an internal page reference like a bookmark that references a specific section of the page. 
+
 ```
